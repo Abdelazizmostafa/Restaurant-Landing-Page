@@ -1,0 +1,495 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    width:1170px;
+    margin: 0 auto;
+}
+.clearfix{
+    clear: both;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+}
+/*========== Start header ========= */
+.header{
+    background-image: url(../images/header.png); 
+    background-size: cover;
+}
+.header .navbar {
+    color: #fff;
+    overflow: hidden;
+    padding: 25px;
+} 
+.header .navbar .logo {
+    width: 20%;
+    float: left;
+ }
+.header .links{
+     width: 60%;
+    height: 80px;
+    margin: 0 auto;
+    display: inline-block;
+ }
+ .header .navbar .links .down-arrow::after{
+     content: "<";
+     display: inline-block;
+     /* padding: 3px; */
+     margin-left: 4px;
+     transform: rotate(-90deg);
+ }
+.header .navbar .links ul {
+    list-style: none;
+    padding: 20px;  
+    margin:30px 17%;
+    text-align: center;
+}
+.header .navbar .links ul li {
+    float: left;
+    padding: 7px;
+}
+.header .navbar .links ul li a{
+    margin-left: 8px;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-size: 14px;
+    font-weight: 700;
+ }
+.header .navbar .links ul li.active a ,
+.header .navbar .links ul li a:hover{
+    color:#333;
+}
+.header .navbar .search{
+    width: 10%;
+    height: 80px;
+    float: right;
+}
+.header .navbar .search img{
+    margin: 15% 25%;
+    border: 2px solid #fff;
+    padding: 15px;
+ }
+.header .slider{
+    /* height: 600px; */
+}
+.header .slider .intro{
+    padding-top: 200px;
+    padding-left: 10px;
+    color: #fff;
+    text-align: center;
+    width: 80%;
+    margin: auto;
+}
+.header .slider .intro p{
+    font-size: 120px;
+    padding: 5px 0 ;
+    color: #fff;  
+    font-family: 'Satisfy', cursive; 
+}
+/*============== End header================= */
+/*============== Start recpies================= */
+.recpie{
+    padding: 50px;
+    margin:auto;
+}
+.recpie .item {
+    width: 30%;
+    margin: 1.5%;
+    display: inline-block;
+    text-align: center;
+  }
+.recpie .item img {
+    margin: 0 7%;
+}
+.recpie .item h4 {
+    font-family: 'Satisfy', cursive; 
+    font-size: 28px;
+    text-transform: capitalize;
+    margin: 25px 0 10px 0 ;
+    font-weight: normal;
+ }
+.recpie .item p{
+    text-transform: capitalize;
+    margin: 15px;
+}
+.recpie .item span{
+    text-transform: capitalize;
+}
+.recpie .item button {
+    text-transform: capitalize;
+    margin: 25px auto;
+    display: block;
+    padding: 10px;
+    height: 45px;
+    width: 170px;
+    background: none;
+    border: none;
+    border: 2px solid #FFC000;
+    border-radius: 30px;
+    color: #333;
+    font-weight: 600;
+}
+.recpie .item button:hover{
+    color: #fff;
+    background-color: #FFC000;
+}
+/*============== end recpies============== */
+/*============ start recpies video ======= */
+.recpies-video{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin: 10px auto;
+}
+.recpies-video .left {
+    width: 45%;
+    display: inline-block;
+    margin-left: 1.5%;
+}
+.recpies-video .left h3{
+    font-family: 'Satisfy', cursive; 
+    font-size: 75px;
+    text-transform: capitalize;
+    font-weight: normal;
+    line-height: 1.2;
+}
+.recpies-video .left p {
+    margin-top: 30px;
+    line-height: 1.5;
+    color: #333;
+}
+.recpies-video .left img {
+    margin-top: 50px;
+    display: inline-block;
+}
+.recpies-video .left .watch{
+    display: inline-block;
+    margin-left: 15px;
+    height: 85px;
+    margin-top: 0;
+}
+.recpies-video .left .watch h5{
+    font-family: 'Satisfy', cursive;
+    text-transform: capitalize;
+    font-size: 40px;
+    margin-bottom: 10px;
+    font-weight: normal;
+}
+.recpies-video .left .watch span {
+    margin-top: 5px;
+    text-transform: capitalize;
+    color: #333;
+}
+
+.recpies-video .right {
+    width: 45%;
+    display: inline-block;
+    margin-left: 8%;
+    margin-top: 0;
+    position: relative;
+    padding-left: 50px; 
+}
+.recpies-video .right .big {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    object-fit: cover;
+}
+.recpies-video .right .sm-one{
+    position: absolute;
+    right:380px;
+    top: 70px;
+}
+.recpies-video .right .sm-two{
+    position: absolute;
+    top: 350px;
+    right: 100px;
+}
+/*=========== end recpies video =========== */
+/*=========== start  dishes =============== */
+.dishes {
+    padding-bottom: 30px;
+    padding-top: 100px;
+    margin: 150px auto;
+}
+.dishes .outer-one{
+    display: inline-block;
+    width: 30%;
+    height: 370px;
+    border: 2px solid #eee;
+    margin: 1.5%;
+    position: relative;
+    border-radius: 10px;
+}
+.dishes .outer-one .text {
+    height: 200px;
+    margin: 37% auto;
+    text-align: center;
+}
+.dishes .outer-one .text h5 {
+    font-family: 'Satisfy', cursive;
+    font-weight: normal;
+    font-size: 30px;
+    text-transform: capitalize;
+    margin-bottom: 25px;
+}
+.dishes .outer-one .text p {
+    margin: 40px auto;
+    line-height: 1.5;
+    width: 75%;
+    color: rgb(219, 199, 199);
+ }
+.dishes .outer-one .inner-one {
+    width: 198px;
+    height: 192px;
+    border-radius: 50%;
+    position: absolute; 
+    left: 23%;
+    bottom: 75%;
+}
+.dishes .outer-one .inner-one img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+/*=========== end  dishes ================= */
+/*=========== start  trends =============== */
+.trends{
+    padding-bottom: 30px;
+    padding-top: 40px;
+    margin: 10px auto;
+    height: 500px;
+    background-image: url(/images/banner.png);
+    background-size:119% 100%;
+    background-repeat: no-repeat;
+    background-position:right;
+    object-fit: cover;
+}
+.trends .content-info{
+    text-align: center;
+    margin: 10% auto;
+}
+.trends .content-info p {
+   text-transform: uppercase;
+   color: rgb(75, 71, 71);
+   margin-bottom: 30px;
+}
+.trends .content-info h4 {
+    font-family: 'Satisfy', cursive;
+    font-weight: normal;
+    font-size: 60px;
+    text-transform: capitalize;
+}
+.trends .content-info button{
+    text-transform: capitalize;
+    margin: 60px auto;
+    display: block;
+    padding: 10px;
+    height: 45px;
+    width: 170px;
+    background-color: #FFC000;
+    border: none;
+    border-radius: 30px;
+    color: #fff;
+    font-weight: 600;
+}
+/*=========== end  trends ================= */
+/*=========== start  Feedback ============= */
+.feedback {
+    padding-bottom: 30px;
+    padding-top: 50px;
+    margin: 10px auto;
+    text-align: center;
+}
+.feedback .info  h3{
+    font-family: 'Satisfy', cursive;
+    font-weight: normal;
+    font-size: 50px;
+    text-transform: capitalize;
+}
+.feedback .info p{
+   width: 70%;
+   margin: 20px  auto;
+   line-height: 1.8;
+}
+.feedback .testem {
+  margin-top: 35px;
+}
+.feedback .testem .test-item{
+    width: 45%;
+    height: 270px;
+    display: inline-block;
+    margin: 2%;
+    border: 2px solid #eee;
+    position: relative;
+}
+.feedback .testem .test-item .profile{
+    width: 22%;
+    margin-left:2%;
+    border-radius: 60%;
+    height: 43%;
+    margin-top: 40px;
+    display: inline-block;
+    position: absolute;
+    left: 20px;
+}
+.feedback .testem .test-item .profile img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.feedback .testem .test-item .qoutes{
+    width: 65%;
+    height:80%;
+    margin-left:1%;
+    margin-top: 40px;
+    display: inline-block;
+    right: 20px;
+    position: absolute;
+}
+.feedback .testem .test-item .qoutes .name {
+    height: 35%;
+    margin-bottom: 2%;
+    text-align: left;
+    padding-left: 10px;
+}
+.feedback .testem .test-item .qoutes .name h6{
+    font-family: 'Satisfy', cursive;
+    font-weight: normal;
+    text-transform: capitalize;
+    font-size: 30px;
+}
+.feedback .testem .test-item .qoutes .name span{
+    text-transform: uppercase;
+    font-size: 14px;
+    color: #b5b5b5;
+
+}
+.feedback .testem .test-item .qoutes .context {
+    height: 50%;
+    margin-top: 7%;
+    padding: 10px;
+    text-align: left;
+    line-height: 1.8;
+    color: #b5b5b5;
+
+}
+.feedback .boltes{
+    width: 25px;
+    height: 6px;
+    margin: 20px auto;
+    background-color: #EEEEEE;
+    display: inline-block;
+}
+.feedback .boltes.active-one{
+    background-color: #FFC000;
+
+}
+/*=========== end  Feedback =============== */
+
+
+
+
+
+/*============ start recpies video ======= */
+.app-download{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin: 10px auto;
+}
+.app-download .app-right {
+    width: 45%;
+    height: 100%;
+    display: inline-block;
+    margin-left: 5%;
+    /* background-color: #FFC000; */
+    margin-top: 0;
+}
+.app-download .app-right h3{
+    font-family: 'Satisfy', cursive; 
+    font-size: 70px;
+    text-transform: capitalize;
+    font-weight: normal;
+    line-height: 1.2;
+    margin-bottom: 22%;
+}
+.app-download .app-right p {
+    margin-top: 30px;
+    line-height: 1.5;
+    color: #333;
+}
+ 
+.app-download .app-right .app-store {
+    width: 43%;
+    height: 100px;
+    background-color:#FFC000;;
+    display: inline-block;
+    margin: 3% ;
+}
+.app-download .app-right .app-store .icon{
+    height: 100%;
+    width: 30%;
+     display: inline-block;
+}
+.app-download .app-right .app-store .icon img {
+    width: 50%;
+    height: 50%;
+    object-fit: cover;
+    margin-left: 20px;
+}
+.app-download .app-right .app-store .app-info{
+    height: 50%;
+    width: 65%;
+    display: inline-block;
+    padding-left: 10px;
+ }
+.app-download .app-right .app-store .app-info p{
+    font-size: 20px;
+    font-weight: 900;
+    text-transform: capitalize;
+    color: #000;
+}
+.app-download .app-right .app-store .app-info span{
+   font-size: 14px;
+   text-transform: capitalize;
+}
+
+.app-download .app-left {
+    width: 45%;
+    display: inline-block;
+    margin-left: 1.5%;
+    margin-top: 0;
+    position: relative;
+    padding-left: 50px; 
+}
+.app-download .app-left .big {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    object-fit: cover;
+}
+.app-download .app-left .sm-one{
+    position: absolute;
+    right:380px;
+    top: 70px;
+}
+.app-download .app-left .sm-two{
+    position: absolute;
+    top: 350px;
+    right: 100px;
+}
+/*=========== end recpies video =========== */
+/*=========== Start  footer  ===============*/
+
+
+
+
+
+
+
+
+
+
+
+/*=========== End footer  ==================*/
